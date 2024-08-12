@@ -4,36 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
     
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>weather dashboard</h1>
-    </div>
     <div class="container">
-        <div class="input">
+        <div class="header-container">
+            <div class="header">
+                <h1>Weather </h1>
+            </div>
             <div class="input-data">
                <!-- <label for="weather">Enter your city: </label> -->
-              <input type="text" placeholder="Enter the city" id="weather">
-               <button class="search-btn">search</button>
-             </div>
-
-             <div class="location">
-               <button class="location_btn">Use current location</button>
+              <input type="text" placeholder="Enter the city" id="weather_inp">
+               <button class="search-btn">Search</button>
+               <button class="location_btn">Current location</button>
              </div>
         </div>
 
         <div class="wdata">
-            <div class="weather-img">
-                
+            <h4>Now</h4>
+
+            <div class="temp-cloc">
+                <div class="weather-data">
+                   <h2>____°C</h2>
+    
+                 </div>
+                <div class="weather-img">
+                    <img src="" alt="">
+                    <h6>___</h3>
+                </div>
+
             </div>
-            <div class="weather-data">
-               <h2>temprature</h2>
-               <h2>wind</h2>
-                <h2>Humidity</h2>
-          </div>
+            <div class="current-time">
+                <h3>_____</h3>
+                <h3><i class="fa-solid fa-calendar-days"></i>_____</h3>
+            </div>
            
         </div>
     </div>
