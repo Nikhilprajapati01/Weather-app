@@ -4,6 +4,7 @@ const btn = document.querySelector(".search-btn");
 const inp = document.querySelector("#weather_inp")
 const wdata = document.querySelector(".wdata")
 const loc_btn = document.querySelector('.location_btn')
+const forcast = document.querySelector(".forcast")
 
 
  async function checkweather (city){
@@ -35,13 +36,51 @@ const loc_btn = document.querySelector('.location_btn')
 
             </div>
             <div class="current-time">
-                <h3>${new Date()}</h3>
+                 
                 <h3><i class="fa-solid fa-calendar-days"></i>${data.name}</h3>
             </div>
            
         </div>`
+
+        forcast.innerHTML = `
+                <div class="day1">
+                    <h3>___days</h3>
+
+                    <div class="condition-icon">
+
+                        <div class="icon">
+                             <img src=" https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">
+  
+                            <h4>${Math.floor(data.main.temp - 273.15)}°C</h4>
+                        </div>
+                        <div class="condition">
+                            <h4>${data.weather[0].description}</h4>
+                            <h4>${data.main.humidity}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="day1">
+                    <h3>___days</h3>
+                </div>
+                <div class="day1">
+                    <h3>___days</h3>
+                </div>
+                <div class="day1">
+                    <h3>___days</h3>
+                </div>
+                <div class="day1">
+                    <h3>___days</h3>
+                </div>
+                <div class="day1">
+                    <h3>___days</h3>
+                </div>
+                <div class="day1">
+                    <h3>___days</h3>
+                </div>
+          
+        `
   }).catch((err) =>{
-    console.log("some error in this ");
+    console.log("some error in this ", err);
     
   })
 }

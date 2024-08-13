@@ -112,6 +112,25 @@ body{
     font-weight: 400;
  }
 
+ .forcast{
+    width: 100vw;
+    height: 40vh;
+  /* border: 2px solid black; */
+   display: flex;
+    gap: 20px;
+}
+.day1{
+    width: 30%;
+    background-color: rgb(36, 35, 35);
+    height: 60%;
+
+ }
+  .condition-icon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;padding: 10px;
+  }
+
  @media (max-width: 1200px) {
     .location_btn{
         padding: .2rem .6rem;
