@@ -8,13 +8,14 @@
 }
 body{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     color: #fff;
 }
 .container{
     width: 100vw;
     height: 100vh;
     background-color: rgb(16, 16, 16);
+    overflow: hidden;
 }
 
 .header-container{
@@ -117,20 +118,38 @@ body{
     height: 40vh;
   /* border: 2px solid black; */
    display: flex;
+   flex-wrap: wrap;
     gap: 20px;
+    padding: 2rem;
 }
 .day1{
-    width: 30%;
+    width: 14%;
     background-color: rgb(36, 35, 35);
-    height: 60%;
+    /* height: 60%; */
 
  }
   .condition-icon{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;padding: 10px;
+    margin-top: 10px;
+    padding: 5px;
   }
 
+.condition{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid white;
+    height: 80px;
+    flex-wrap: wrap;
+
+    
+}
+.condition h4{
+    font-size: small;
+}
  @media (max-width: 1200px) {
     .location_btn{
         padding: .2rem .6rem;
